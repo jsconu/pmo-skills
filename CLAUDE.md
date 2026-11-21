@@ -22,4 +22,4 @@ No em-dashes anywhere in this repo's prose. Rewrite the sentence with a comma, c
 
 Write in plain PM language. No jargon a sponsor wouldn't use, no AI-sounding phrasing.
 
-Releases: build with `python scripts/build_zips.py`, which writes `dist/<skill>.zip` for every skill plus `dist/pmo-skills-all.zip`, then attach them to a GitHub release. The README download links point at `releases/latest/download/<skill>.zip`, so asset names must stay the same. Run `claude plugin validate . --strict` after touching either manifest, and bump `version` in `plugin.json` with each release.
+Releases: build with `python scripts/build_zips.py`, which writes `dist/<skill>.zip` for every skill plus `dist/pmo-skills-all.zip` and `dist/pmo-skills-all.md` (every skill in one text file for non-Claude assistants), then attach them to a GitHub release. The README download links point at `releases/latest/download/<skill>.zip`, so asset names must stay the same. Run `claude plugin validate . --strict` after touching either manifest, and bump `version` in `plugin.json` with each release.

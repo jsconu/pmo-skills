@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.0 (2026-11-21)
+
+- Added `pmo-skills-all.md` to each release: every skill in one text file, for ChatGPT, Grok, Gemini, Copilot and other assistants that don't install Claude skills.
+- README: setup steps for those assistants (attach the file to a project, GPT or Gem with the given instructions, or paste one skill into a chat).
+
 ## 0.2.0 (2026-11-21)
 
 - Added `build-the-portfolio-report` to Run the portfolio: combine several project status reports into one portfolio report, with like-for-like project lines, decisions for leadership, cross-project dependencies and causes, and stale or inconsistent reports flagged.
