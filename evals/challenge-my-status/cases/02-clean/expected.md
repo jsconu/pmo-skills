@@ -4,7 +4,7 @@ Status: DRAFT. A PM must validate this key before any run.
 
 ## Correct call
 - **Send as is.** Every claim is supported:
-  - Design sign-off 14 May: the evidence matches; one day ahead of the 15 May baseline.
+  - Design sign-off 14 May: matches both the approved report and the design lead's email. (Before 2026-11-20 the approved report said 15 May, which made this case less clean than intended.)
   - Build complete 3 Jul: an approved change (CR-14, approved by the sponsor on 3 Jun).
   - Amber with a stated reason: consistent with the evidence.
 - Light suggestions are acceptable only if clearly marked as optional.

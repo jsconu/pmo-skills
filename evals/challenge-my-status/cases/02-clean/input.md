@@ -1,5 +1,5 @@
 APPROVED REPORT, Monday 1 June 2026 (approved by sponsor)
-- Design sign-off: Friday 15 May
+- Design sign-off: complete, Thursday 14 May
 - Build complete: Friday 26 June
 - Overall status: Amber (one developer short since April)
 
