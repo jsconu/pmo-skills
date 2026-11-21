@@ -4,7 +4,9 @@ By **Justin Scoville, PMP, PgMP**. Published by [Ondatrace](https://ondatrace.co
 
 Agent skills for project managers, sponsors and PMO leaders: the checks I run on a meeting, a status report, a slipped date or a steering agenda before anything goes in front of a sponsor.
 
-AI assistants are quick to write a status report and quick to raise a risk. They are much worse at the part of the job that matters: telling a forecast from a commitment, a suggestion from a decision, and a slip that still has ten days of buffer from one that collides. These skills are small, plain-language methods that hold an assistant to that standard. They work with whatever you paste in. No connectors, no code, no account.
+AI assistants are quick to write a status report and quick to raise a risk. They are much worse at the part of the job that matters: telling a forecast from a commitment, a suggestion from a decision, and a slip that still has ten days of buffer from one that collides. These skills are small, plain-language methods that hold an assistant to that standard. They work with whatever you paste in.
+
+**Free, and nothing to sign up for.** You don't need an Ondatrace account or any other account beyond the AI assistant you already use. No connectors, no code.
 
 Use them, adapt them, pass them to a colleague. If you hit a case they get wrong, [tell me](#contributing).
 
@@ -31,7 +33,7 @@ All examples use fictional projects and people.
 2. In Claude, open **Settings > Capabilities**, make sure code execution and file creation are on, then upload the ZIP under **Skills**.
 3. Start a new chat and paste your material. Claude picks up the skill when it fits.
 
-Skills work on Free and paid plans. On Team and Enterprise plans an admin may need to allow them. If upload isn't available in your workspace, paste the skill's `SKILL.md` text into the chat instead. [Claude's instructions](https://support.claude.com/en/articles/12512180-use-skills-in-claude)
+You can upload skills on any Claude plan, including Claude's own free plan. If you use Claude through your employer, your Claude admin may need to switch skills on first. If you can't upload, open the skill's `SKILL.md`, copy the text, and paste it into the chat before your material instead. [Claude's instructions](https://support.claude.com/en/articles/12512180-use-skills-in-claude)
 
 </details>
 
