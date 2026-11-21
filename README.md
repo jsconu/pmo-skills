@@ -24,14 +24,15 @@ Use them, adapt them, pass them to a colleague. If you hit a case they get wrong
 
 All examples use fictional projects and people.
 
-## Install
+## Step 1: Install the skills
+
+The exercises above work without installing anything. To use the skills on your own projects, install them first. Pick the option for the tool you use.
 
 <details open>
-<summary><strong>Claude (claude.ai, desktop or mobile)</strong></summary>
+<summary><strong>Claude (claude.ai, desktop or mobile)</strong>: most people start here</summary>
 
-1. Pick a skill below and click **Download** to get its ZIP. Or take [all of them in one ZIP](https://github.com/jsconu/pmo-skills/releases/latest/download/pmo-skills-all.zip) and unzip it to upload the ones you want.
-2. In Claude, open **Settings > Capabilities**, make sure code execution and file creation are on, then upload the ZIP under **Skills**.
-3. Start a new chat and paste your material. Claude picks up the skill when it fits.
+1. Pick a skill in the [list below](#reference) and click **Download** to get its ZIP. Or take [all of them in one ZIP](https://github.com/jsconu/pmo-skills/releases/latest/download/pmo-skills-all.zip) and unzip it to upload the ones you want.
+2. In Claude, open **Settings > Capabilities**, make sure code execution and file creation are on, then upload the ZIP under **Skills**. Repeat for each skill you want.
 
 You can upload skills on any Claude plan, including Claude's own free plan. If you use Claude through your employer, your Claude admin may need to switch skills on first. If you can't upload, open the skill's `SKILL.md`, copy the text, and paste it into the chat before your material instead. [Claude's instructions](https://support.claude.com/en/articles/12512180-use-skills-in-claude)
 
@@ -52,7 +53,7 @@ claude plugin install pmo-skills@jsconu
 
 Claude Code calls any repo that offers plugins a "marketplace", which is why the first command uses that word. Nothing is bought, and no account is needed beyond Claude Code itself.
 
-Start a new session afterwards and the skills are available. To update later, run `claude plugin marketplace update jsconu` and then `claude plugin update pmo-skills@jsconu`. To remove it, run `claude plugin uninstall pmo-skills@jsconu`.
+Start a new Claude Code session afterwards so it loads the skills. To update later, run `claude plugin marketplace update jsconu` and then `claude plugin update pmo-skills@jsconu`. To remove it, run `claude plugin uninstall pmo-skills@jsconu`.
 
 </details>
 
@@ -65,7 +66,11 @@ npx skills@latest add jsconu/pmo-skills
 
 </details>
 
-Not sure where to start? In Claude Code, run `/ask-justin`. Anywhere else, start with [the moment you're in](#reference).
+## Step 2: Use them
+
+Once a skill is installed, you don't need a special command. Start a new chat, paste your material (a transcript, a status draft, a vendor email) and ask in your own words, for example "check my status report before I send it". The assistant picks up the matching skill on its own.
+
+**Not sure which skill you need?** Look up [the moment you're in](#reference). If you installed in Claude Code, you can also type `/ask-justin` (or `/pmo-skills:ask-justin`) and describe your situation, and it will point you to the right skill. That command only exists after Step 1, and only in Claude Code; it isn't part of the Claude app downloads.
 
 ## Why these skills exist
 
