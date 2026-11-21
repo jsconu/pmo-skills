@@ -17,7 +17,7 @@ import sys
 import tempfile
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-BUCKETS = ("delivery", "portfolio", "in-progress")
+BUCKETS = ("frame-the-work", "run-the-week", "test-the-status", "run-the-portfolio", "follow-the-decision", "measure-and-learn", "start-here")
 BLOCKED_TOOLS = ("Bash", "PowerShell", "Read", "Edit", "Write", "Glob", "Grep", "NotebookEdit", "WebFetch",
                  "WebSearch", "Agent", "Task", "TodoWrite", "Skill")
 

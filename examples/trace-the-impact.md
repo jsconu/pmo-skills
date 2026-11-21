@@ -1,6 +1,6 @@
 # The vendor slipped. There are still ten days of buffer. Would you escalate?
 
-A five-minute exercise for [`trace-the-impact`](../skills/in-progress/trace-the-impact/SKILL.md). No install needed. Everything here is fictional.
+A five-minute exercise for [`trace-the-impact`](../skills/test-the-status/trace-the-impact/SKILL.md). No install needed. Everything here is fictional.
 
 ## Copy everything in this box into a new chat
 

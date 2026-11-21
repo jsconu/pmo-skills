@@ -1,0 +1,3 @@
+interface:
+  display_name: "Check the Decision"
+  short_description: "Take a past decision"

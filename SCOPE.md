@@ -11,7 +11,7 @@ A change to a skill is taken up only if it clears **both** parts:
 
 ## New skills
 
-Suggestions are welcome as [ideas](https://github.com/jsconu/pmo-skills/issues/new?template=idea.yml). A new skill joins `in-progress/` only when there is a clear moment it serves and four fictional cases to test it on. It is promoted only after it beats a plain assistant in a blind review (see [evals/](./evals/README.md)).
+Suggestions are welcome as [ideas](https://github.com/jsconu/pmo-skills/issues/new?template=idea.yml). A new skill is added when there is a clear moment it serves, it doesn't overlap an existing skill, and there is a fictional example to show it working.
 
 ## Out of scope
 

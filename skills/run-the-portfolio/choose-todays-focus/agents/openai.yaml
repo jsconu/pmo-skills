@@ -1,0 +1,3 @@
+interface:
+  display_name: "Choose Todays Focus"
+  short_description: "From current project briefs and pending decisions"

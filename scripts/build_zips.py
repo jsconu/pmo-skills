@@ -21,6 +21,7 @@ def main() -> None:
     args = parser.parse_args()
     dist = ROOT / "dist"
     dist.mkdir(exist_ok=True)
+    built = []
     for skill_md in sorted(ROOT.glob("skills/*/*/SKILL.md")):
         folder = skill_md.parent
         if folder.parent.name == "deprecated" or folder.name in SKIP:
@@ -34,6 +35,14 @@ def main() -> None:
                 if path.is_file() and rel.parts[0] != "agents":
                     zf.write(path, pathlib.PurePosixPath(folder.name, *rel.parts))
         print(f"{target.relative_to(ROOT)}  ({', '.join(zipfile.ZipFile(target).namelist())})")
+        built.append(target)
+    if not args.only:
+        # One download holding every skill ZIP, to unzip and upload the ones you want.
+        everything = dist / "pmo-skills-all.zip"
+        with zipfile.ZipFile(everything, "w", zipfile.ZIP_DEFLATED) as zf:
+            for target in built:
+                zf.write(target, target.name)
+        print(f"{everything.relative_to(ROOT)}  ({len(built)} skill ZIPs)")
 
 
 if __name__ == "__main__":

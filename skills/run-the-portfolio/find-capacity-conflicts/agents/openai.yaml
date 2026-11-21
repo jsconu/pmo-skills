@@ -1,0 +1,3 @@
+interface:
+  display_name: "Find Capacity Conflicts"
+  short_description: "Add up each person's allocated hours across projects and fin"

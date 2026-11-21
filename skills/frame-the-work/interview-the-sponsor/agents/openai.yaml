@@ -1,0 +1,3 @@
+interface:
+  display_name: "Interview the Sponsor"
+  short_description: "Interview a sponsor or requester about a new project"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Write the Weekly Update"
+  short_description: "Write this week's project status update from last week's rep"

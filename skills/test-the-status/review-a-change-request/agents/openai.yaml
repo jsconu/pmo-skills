@@ -1,0 +1,3 @@
+interface:
+  display_name: "Review a Change Request"
+  short_description: "Review a proposed scope"

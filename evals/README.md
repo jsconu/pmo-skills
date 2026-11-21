@@ -1,6 +1,6 @@
-# How a skill earns its place
+# Testing a skill (optional)
 
-No skill leaves `in-progress/` on my say-so. Each one is compared blind against a plain assistant on fictional cases, and an experienced PM picks the answer they'd take into a meeting.
+A harness for comparing a skill blind against a plain assistant on fictional cases. Cases exist so far for trace-the-impact, challenge-my-status and debrief-the-meeting. Use it when you change one of those skills, or add cases for another.
 
 ## The cases
 
@@ -54,13 +54,13 @@ For each packet, in `scores.csv`, per answer:
 
 And per packet: which answer they'd take into the meeting (A, B or tie), and why, in one sentence.
 
-## The release gate
+## A useful bar
 
 ```bash
 python scripts/tally.py evals/runs/<date>
 ```
 
-A skill passes the first round when all of these hold:
+A change to a skill is an improvement when all of these hold:
 
 1. The reviewer prefers the skill arm on **at least three of the four cases** (both repeats of a case must lean the same way, or the case counts as a tie).
 2. Each preference comes with a **specific improvement** the reviewer can name.

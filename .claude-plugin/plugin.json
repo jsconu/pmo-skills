@@ -9,6 +9,39 @@
   "homepage": "https://ondatrace.com",
   "repository": "https://github.com/jsconu/pmo-skills",
   "license": "MIT",
-  "keywords": ["project-management", "pmo", "status-report", "meetings", "risk", "skills"],
-  "skills": []
+  "keywords": [
+    "project-management",
+    "pmo",
+    "status-report",
+    "meetings",
+    "risk",
+    "skills"
+  ],
+  "skills": [
+    "./skills/start-here/ask-justin",
+    "./skills/frame-the-work/draft-the-charter",
+    "./skills/frame-the-work/find-the-projects",
+    "./skills/frame-the-work/interview-the-sponsor",
+    "./skills/frame-the-work/prioritize-the-backlog",
+    "./skills/run-the-week/debrief-the-meeting",
+    "./skills/run-the-week/draft-the-stakeholder-update",
+    "./skills/run-the-week/triage-the-risks",
+    "./skills/run-the-week/write-the-weekly-update",
+    "./skills/test-the-status/challenge-my-status",
+    "./skills/test-the-status/reconcile-the-dates",
+    "./skills/test-the-status/review-a-change-request",
+    "./skills/test-the-status/trace-the-impact",
+    "./skills/run-the-portfolio/choose-todays-focus",
+    "./skills/run-the-portfolio/find-capacity-conflicts",
+    "./skills/run-the-portfolio/group-portfolio-risks",
+    "./skills/run-the-portfolio/prep-the-portfolio-review",
+    "./skills/follow-the-decision/check-the-decision",
+    "./skills/follow-the-decision/plan-change-adoption",
+    "./skills/follow-the-decision/plan-the-handoff",
+    "./skills/follow-the-decision/trace-a-decision",
+    "./skills/measure-and-learn/check-the-success-metrics",
+    "./skills/measure-and-learn/find-recurring-lessons",
+    "./skills/measure-and-learn/review-the-budget",
+    "./skills/measure-and-learn/run-the-retrospective"
+  ]
 }

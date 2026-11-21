@@ -1,0 +1,3 @@
+interface:
+  display_name: "Group Portfolio Risks"
+  short_description: "Read risk registers from several projects and group similar "
