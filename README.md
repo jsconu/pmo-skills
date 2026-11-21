@@ -10,23 +10,9 @@ AI assistants are quick to write a status report and quick to raise a risk. They
 
 Use them, adapt them, pass them to a colleague. If you hit a case they get wrong, [tell me](#contributing).
 
-## Try one in five minutes (no install)
-
-1. Open a chat with Claude (or whichever assistant your company approves).
-2. Open an exercise below, copy the whole box, and paste it in.
-3. Compare the answer with the worked answer underneath.
-
-| Exercise | The question |
-| --- | --- |
-| [The vendor slipped](./examples/trace-the-impact.md) | There are still ten days of buffer. Would you escalate? |
-| [Did anyone approve the new date?](./examples/challenge-my-status.md) | A vendor forecast crept into the status draft. |
-| [Who actually owns that?](./examples/debrief-the-meeting.md) | A decision, a suggestion, and an action nobody accepted. |
-
-All examples use fictional projects and people.
-
 ## Step 1: Install the skills
 
-The exercises above work without installing anything. To use the skills on your own projects, install them first. Pick the option for the tool you use.
+Pick the option for the tool you use.
 
 <details open>
 <summary><strong>Claude (claude.ai, desktop or mobile)</strong>: most people start here</summary>
