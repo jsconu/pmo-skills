@@ -1,0 +1,38 @@
+name: Case a skill got wrong
+description: A fictional situation where a skill (or a plain assistant) made the wrong call.
+labels: ["case"]
+body:
+  - type: markdown
+    attributes:
+      value: "Fictional only. Change every name, company, date and figure. Never paste real project material."
+  - type: input
+    id: skill
+    attributes:
+      label: Skill
+      placeholder: trace-the-impact
+    validations:
+      required: true
+  - type: textarea
+    id: packet
+    attributes:
+      label: What you pasted
+      description: The short packet a PM would give the assistant.
+    validations:
+      required: true
+  - type: textarea
+    id: answer
+    attributes:
+      label: What it said
+    validations:
+      required: true
+  - type: textarea
+    id: call
+    attributes:
+      label: The call you would make, and what evidence would change it
+    validations:
+      required: true
+  - type: dropdown
+    id: credit
+    attributes:
+      label: May I credit you by name if this case is used?
+      options: ["Yes", "No"]

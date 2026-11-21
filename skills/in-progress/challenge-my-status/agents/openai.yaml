@@ -1,0 +1,3 @@
+interface:
+  display_name: "Challenge My Status"
+  short_description: "Check a status draft before you send it"

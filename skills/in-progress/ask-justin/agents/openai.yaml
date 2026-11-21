@@ -1,0 +1,5 @@
+interface:
+  display_name: "Ask Justin"
+  short_description: "Find the right PMO skill for the moment"
+policy:
+  allow_implicit_invocation: false

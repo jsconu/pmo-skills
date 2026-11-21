@@ -1,0 +1,14 @@
+{
+  "name": "pmo-skills",
+  "version": "0.1.0",
+  "description": "Justin Scoville's PMO skills for project managers, sponsors and PMO leaders: meeting debriefs, status checks and impact tracing that keep forecasts, decisions and buffers straight.",
+  "author": {
+    "name": "Justin Scoville",
+    "url": "https://ondatrace.com"
+  },
+  "homepage": "https://ondatrace.com",
+  "repository": "https://github.com/jsconu/pmo-skills",
+  "license": "MIT",
+  "keywords": ["project-management", "pmo", "status-report", "meetings", "risk", "skills"],
+  "skills": []
+}

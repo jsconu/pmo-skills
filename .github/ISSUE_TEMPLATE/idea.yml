@@ -1,0 +1,21 @@
+name: Skill idea
+description: A moment in PM or PMO work where you'd like help.
+labels: ["idea"]
+body:
+  - type: textarea
+    id: moment
+    attributes:
+      label: The moment
+      description: When does this come up, and what do you have in front of you?
+    validations:
+      required: true
+  - type: textarea
+    id: good
+    attributes:
+      label: What a good answer would do
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: A fictional example (optional)

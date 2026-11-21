@@ -1,0 +1,1 @@
+An upstream date on my project has moved. Using only the material below, tell me which downstream work is affected, what can still go ahead, how much buffer is left, and whether I should escalate anything. Show your reasoning so I can check it.

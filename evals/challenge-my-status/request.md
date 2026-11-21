@@ -1,0 +1,1 @@
+I'm about to send this week's status report. Using only the material below, check my draft against last week's approved report and the supporting notes, and tell me what I should change before I send it and why. Give me wording I can use.
