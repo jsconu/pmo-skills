@@ -18,6 +18,8 @@ import tempfile
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 BUCKETS = ("delivery", "portfolio", "in-progress")
+BLOCKED_TOOLS = ("Bash", "PowerShell", "Read", "Edit", "Write", "Glob", "Grep", "NotebookEdit", "WebFetch",
+                 "WebSearch", "Agent", "Task", "TodoWrite", "Skill")
 
 
 def find_skill(name: str) -> pathlib.Path:
@@ -45,7 +47,9 @@ def run_once(prompt: str, model: str, system_extra: str | None, env: dict) -> st
         sys.exit("claude (Claude Code) is not on PATH")
     cmd = [
         claude, "-p", "--model", model, "--output-format", "text",
-        "--tools", "", "--strict-mcp-config", "--disable-slash-commands", "--no-session-persistence",
+        # `--tools ""` does not remove the built-in tools in -p mode, so block them by name.
+        "--disallowedTools", *BLOCKED_TOOLS,
+        "--strict-mcp-config", "--disable-slash-commands", "--no-session-persistence",
     ]
     if system_extra:
         cmd += ["--append-system-prompt", system_extra]
