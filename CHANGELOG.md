@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.0 (2026-11-21)
+
+- Added `build-the-portfolio-report` to Run the portfolio: combine several project status reports into one portfolio report, with like-for-like project lines, decisions for leadership, cross-project dependencies and causes, and stale or inconsistent reports flagged.
+- `ask-justin` now chains it: write-the-weekly-update per project, then build-the-portfolio-report across them.
+
 ## 0.1.0 (2026-11-20)
 
 First public release: 24 skills in six folders, plus the `ask-justin` router.

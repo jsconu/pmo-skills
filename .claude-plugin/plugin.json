@@ -1,6 +1,6 @@
 {
   "name": "pmo-skills",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Justin Scoville's PMO skills for project managers, sponsors and PMO leaders: meeting debriefs, status checks and impact tracing that keep forecasts, decisions and buffers straight.",
   "author": {
     "name": "Justin Scoville",
@@ -31,6 +31,7 @@
     "./skills/test-the-status/reconcile-the-dates",
     "./skills/test-the-status/review-a-change-request",
     "./skills/test-the-status/trace-the-impact",
+    "./skills/run-the-portfolio/build-the-portfolio-report",
     "./skills/run-the-portfolio/choose-todays-focus",
     "./skills/run-the-portfolio/find-capacity-conflicts",
     "./skills/run-the-portfolio/group-portfolio-risks",

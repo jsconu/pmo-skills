@@ -45,6 +45,7 @@ Before anything goes to a sponsor: check the claims, the dates, the impact of a 
 
 Across projects: steering, capacity, shared risks and where to spend today.
 
+- **build-the-portfolio-report**: Combine several project status reports into one portfolio report for leadership, with a like-for-like view of every project, the decisions leadership needs to make, the risks and dependencies that cross projects, and the reports that are stale or don't hold up.
 - **choose-todays-focus**: From current project briefs and pending decisions, pick the single most useful next action per project and order them for a leader's attention today.
 - **find-capacity-conflicts**: Add up each person's allocated hours across projects and find who is over capacity, in which weeks and by how much, with a trade-off for the director to decide.
 - **group-portfolio-risks**: Read risk registers from several projects and group similar exposures, with supporting examples, separating a genuinely shared cause from risks that only sound alike.
@@ -74,6 +75,7 @@ Money, metrics and lessons.
 - **New project:** interview-the-sponsor, then draft-the-charter.
 - **A slip turns up in a meeting:** debrief-the-meeting, then trace-the-impact, then challenge-my-status on the report that has to mention it.
 - **Steering:** prep-the-portfolio-review before, fill its decision log at the close, then check-the-decision at the next review and trace-a-decision to see whether it landed.
+- **Portfolio reporting:** write-the-weekly-update (or challenge-my-status) per project, then build-the-portfolio-report across them.
 - **Closing out:** run-the-retrospective per project, then find-recurring-lessons across several.
 
 ## Nothing fits
