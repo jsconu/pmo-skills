@@ -36,12 +36,21 @@ Skills work on Free and paid plans. On Team and Enterprise plans an admin may ne
 </details>
 
 <details>
-<summary><strong>Claude Code</strong></summary>
+<summary><strong>Claude Code</strong> (installs straight from this GitHub repo)</summary>
+
+PMO Skills isn't in Anthropic's official plugin directory. Claude Code can install it directly from this repository instead. Run these two commands in your terminal:
 
 ```bash
+# 1. Tell Claude Code where to find the plugin (this GitHub repo)
 claude plugin marketplace add jsconu/pmo-skills
+
+# 2. Install it
 claude plugin install pmo-skills@jsconu
 ```
+
+Claude Code calls any repo that offers plugins a "marketplace", which is why the first command uses that word. Nothing is bought, and no account is needed beyond Claude Code itself.
+
+Start a new session afterwards and the skills are available. To update later, run `claude plugin marketplace update jsconu` and then `claude plugin update pmo-skills@jsconu`. To remove it, run `claude plugin uninstall pmo-skills@jsconu`.
 
 </details>
 
