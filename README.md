@@ -195,6 +195,8 @@ The most useful thing you can send is a **case**: a fictional situation where a 
 
 Please never paste real project material, names or client details into an issue.
 
+**How the skills improve:** Each week, reported failures can be reproduced against the current skill and a plain assistant, tested for regressions, and proposed as a **draft pull request** for maintainer review. Nothing changes automatically for existing users. See the [continuous improvement process](./docs/CONTINUOUS_IMPROVEMENT.md).
+
 ## License
 
 [MIT](./LICENSE). Maintained by Justin Scoville. Published by [Ondatrace](https://ondatrace.com).
