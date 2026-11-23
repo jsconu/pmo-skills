@@ -1,5 +1,9 @@
 # PMO Skills for Real Project Managers
 
+## [Download all PMO skills (ZIP)](https://github.com/jsconu/pmo-skills/releases/latest/download/pmo-skills-all.zip)
+
+Unzip the free bundle to find the individual skill ZIPs for Claude. For ChatGPT and other assistants, [download all skills as one Markdown file](https://github.com/jsconu/pmo-skills/releases/latest/download/pmo-skills-all.md).
+
 By **Justin Scoville, PMP, PgMP**. Published by [Ondatrace](https://ondatrace.com).
 
 Agent skills for project managers, sponsors and PMO leaders: the checks I run on a meeting, a status report, a slipped date or a steering agenda before anything goes in front of a sponsor.
