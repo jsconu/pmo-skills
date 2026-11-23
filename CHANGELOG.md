@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.0 (2026-11-22)
+
+- Skills can respond to user corrections and apply preferences when the assistant's memory or workspace supports it. They never silently save or upload project details.
+- Added an evidence-gated weekly shared improvement process for maintainer-reviewed fixes.
+- Added CI checks for skill metadata, complete ZIP builds and the combined Markdown download.
+- Publish a new versioned release only after GitHub Actions validation passes.
+
 ## 0.3.0 (2026-11-21)
 
 - Added `pmo-skills-all.md` to each release: every skill in one text file, for ChatGPT, Grok, Gemini, Copilot and other assistants that don't install Claude skills.
