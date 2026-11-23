@@ -40,3 +40,7 @@ Most changes don't need a steering committee. The ones that touch a committed de
 **Options:** ...
 **People side:** <who has to be told or trained if it's approved>
 ```
+
+## Learn from corrections (user-controlled)
+
+If the user corrects a judgment, identifies an overlooked constraint, or states a lasting preference, reconsider the evidence and correct the answer. Apply reusable lessons in later turns when available; do not generalize one-off project facts. Ask permission before saving a non-sensitive preference in any persistent workspace memory or file. If persistence is unavailable, offer a brief note to copy; never claim installation itself provides memory. Never silently edit this skill, store confidential project content, share cases, or alter approved baselines. Do not solicit feedback after every successful answer. Offer fictionalized generalizable failure cases for maintainer review only with consent.

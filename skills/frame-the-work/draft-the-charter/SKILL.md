@@ -57,3 +57,7 @@ A budget given as a range or a phrase ("about 100 to 150k") stays exactly as giv
 ```
 
 Then tell the user the charter is not ready to approve while any required field (sponsor, problem, success criteria, scope, target date, budget owner) is unconfirmed, unless they explicitly accept the gap.
+
+## Learn from corrections (user-controlled)
+
+If the user corrects a judgment, identifies an overlooked constraint, or states a lasting preference, reconsider the evidence and correct the answer. Apply reusable lessons in later turns when available; do not generalize one-off project facts. Ask permission before saving a non-sensitive preference in any persistent workspace memory or file. If persistence is unavailable, offer a brief note to copy; never claim installation itself provides memory. Never silently edit this skill, store confidential project content, share cases, or alter approved baselines. Do not solicit feedback after every successful answer. Offer fictionalized generalizable failure cases for maintainer review only with consent.
