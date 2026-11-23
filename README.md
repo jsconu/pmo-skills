@@ -80,6 +80,12 @@ Once the skills are installed (or attached to your workspace), you don't need a 
 
 **Not sure which skill you need?** Look up [the moment you're in](#reference). If you installed in Claude Code, you can also type `/ask-justin` (or `/pmo-skills:ask-justin`) and describe your situation, and it will point you to the right skill. That command only exists after Step 1, and only in Claude Code; it isn't part of the Claude app downloads.
 
+## The skills can learn your preferences
+
+When you correct a skill's judgment or tell it how you prefer to work, it can use that feedback to improve its next answers **within the context it can access**. For example, if a two-day slip still has ten days of buffer, it should correct the escalation and remember to check real downstream impact before escalating again.
+
+**Important:** Uploading a skill ZIP does not give it automatic, permanent memory or permission to modify itself. For lasting customization, ask your assistant to summarize a non-sensitive preference and save it in your own Project/workspace instructions if supported. The assistant should ask permission before saving. It never sends your project materials back to this repository. See [Personal learning](./docs/PERSONAL_LEARNING.md). Public improvements still go through [reviewed pull requests](./docs/CONTINUOUS_IMPROVEMENT.md).
+
 ## Why these skills exist
 
 ### #1: The recap says it was decided. It wasn't.
