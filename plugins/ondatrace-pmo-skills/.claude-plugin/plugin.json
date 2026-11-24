@@ -45,5 +45,6 @@
     "./skills/measure-and-learn/review-the-budget",
     "./skills/measure-and-learn/run-the-retrospective"
   ],
-  "displayName": "Ondatrace PMO Skills"
+  "displayName": "Ondatrace PMO Skills",
+  "privacyPolicyUrl": "https://ondatrace.com/privacy/#ai-skills"
 }
