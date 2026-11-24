@@ -38,12 +38,12 @@ PMO Skills isn't in Anthropic's official plugin directory. Claude Code can insta
 claude plugin marketplace add jsconu/pmo-skills
 
 # 2. Install it
-claude plugin install pmo-skills@jsconu
+claude plugin install ondatrace-pmo-skills@jsconu
 ```
 
 Claude Code calls any repo that offers plugins a "marketplace", which is why the first command uses that word. Nothing is bought, and no account is needed beyond Claude Code itself.
 
-Start a new Claude Code session afterwards so it loads the skills. To update later, run `claude plugin marketplace update jsconu` and then `claude plugin update pmo-skills@jsconu`. To remove it, run `claude plugin uninstall pmo-skills@jsconu`.
+Start a new Claude Code session afterwards so it loads the skills. To update later, run `claude plugin marketplace update jsconu` and then `claude plugin update ondatrace-pmo-skills@jsconu`. To remove it, run `claude plugin uninstall ondatrace-pmo-skills@jsconu`.
 
 </details>
 
@@ -100,7 +100,7 @@ When you correct a skill's judgment or tell it how you prefer to work, it can us
 
 **The problem.** An assistant summarising a meeting rounds everything up. "Maybe we should" becomes a decision. "Priya, can you chase the vendor?" becomes Priya's action, even though Priya had already dropped off the call.
 
-**The fix.** [`debrief-the-meeting`](./skills/run-the-week/debrief-the-meeting/SKILL.md) separates what was said, what was decided and by whom, and what someone actually accepted. [`plan-the-handoff`](./skills/follow-the-decision/plan-the-handoff/SKILL.md) applies the same discipline to ownership: assigned is not acknowledged, and acknowledged is not done.
+**The fix.** [`debrief-the-meeting`](./plugins/ondatrace-pmo-skills/skills/run-the-week/debrief-the-meeting/SKILL.md) separates what was said, what was decided and by whom, and what someone actually accepted. [`plan-the-handoff`](./plugins/ondatrace-pmo-skills/skills/follow-the-decision/plan-the-handoff/SKILL.md) applies the same discipline to ownership: assigned is not acknowledged, and acknowledged is not done.
 
 ### #2: The status report quietly moved the date.
 
@@ -110,19 +110,19 @@ When you correct a skill's judgment or tell it how you prefer to work, it can us
 
 **The problem.** A vendor emails a new forecast. It ends up in this week's draft as the date, the colour stays green, and the approved baseline disappears. Nobody approved anything.
 
-**The fix.** [`challenge-my-status`](./skills/test-the-status/challenge-my-status/SKILL.md) reads your draft against the last approved report and hands back the claims a sponsor would challenge, with wording you can paste. [`reconcile-the-dates`](./skills/test-the-status/reconcile-the-dates/SKILL.md) lines up the plan, the commitment and the forecast without picking a winner.
+**The fix.** [`challenge-my-status`](./plugins/ondatrace-pmo-skills/skills/test-the-status/challenge-my-status/SKILL.md) reads your draft against the last approved report and hands back the claims a sponsor would challenge, with wording you can paste. [`reconcile-the-dates`](./plugins/ondatrace-pmo-skills/skills/test-the-status/reconcile-the-dates/SKILL.md) lines up the plan, the commitment and the forecast without picking a winner.
 
 ### #3: Every slip gets escalated, so none of them land.
 
 **The problem.** Ask an assistant whether a slip is a risk and it will usually say yes. A PM who escalates a slip with ten days of buffer spends credibility they'll need for the real collision.
 
-**The fix.** [`trace-the-impact`](./skills/test-the-status/trace-the-impact/SKILL.md) finds the need date, shows the buffer arithmetic, separates work that can proceed from work that genuinely waits, and escalates only the collisions. [`triage-the-risks`](./skills/run-the-week/triage-the-risks/SKILL.md) holds every risk to a specific trigger and a real response.
+**The fix.** [`trace-the-impact`](./plugins/ondatrace-pmo-skills/skills/test-the-status/trace-the-impact/SKILL.md) finds the need date, shows the buffer arithmetic, separates work that can proceed from work that genuinely waits, and escalates only the collisions. [`triage-the-risks`](./plugins/ondatrace-pmo-skills/skills/run-the-week/triage-the-risks/SKILL.md) holds every risk to a specific trigger and a real response.
 
 ### #4: The decision was approved. Nobody checked whether it worked.
 
 **The problem.** Steering approves a workaround and moves on. A month later nobody can say whether it helped, and half the plans still show the old date.
 
-**The fix.** [`prep-the-portfolio-review`](./skills/run-the-portfolio/prep-the-portfolio-review/SKILL.md) puts decisions first and ships with a one-page decision log. [`check-the-decision`](./skills/follow-the-decision/check-the-decision/SKILL.md) compares the expected outcome with fresh evidence at the next review, and [`trace-a-decision`](./skills/follow-the-decision/trace-a-decision/SKILL.md) finds the plans and promises that never caught up.
+**The fix.** [`prep-the-portfolio-review`](./plugins/ondatrace-pmo-skills/skills/run-the-portfolio/prep-the-portfolio-review/SKILL.md) puts decisions first and ships with a one-page decision log. [`check-the-decision`](./plugins/ondatrace-pmo-skills/skills/follow-the-decision/check-the-decision/SKILL.md) compares the expected outcome with fresh evidence at the next review, and [`trace-a-decision`](./plugins/ondatrace-pmo-skills/skills/follow-the-decision/trace-a-decision/SKILL.md) finds the plans and promises that never caught up.
 
 ## Reference
 
@@ -136,10 +136,10 @@ Starting something new: the sponsor, the charter, the project list, the backlog.
 
 | Skill | What it does | Claude upload |
 | --- | --- | --- |
-| **[draft-the-charter](./skills/frame-the-work/draft-the-charter/SKILL.md)** | Turn kickoff notes, a sponsor interview or a request email into a project charter that labels every field as confirmed, inferred or unconfirmed and lists who can close each gap. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/draft-the-charter.zip) |
-| **[find-the-projects](./skills/frame-the-work/find-the-projects/SKILL.md)** | Sort a messy batch of notes, emails, tickets or chat exports into the candidate projects and initiatives they describe, with aliases and the boundaries that need a PMO lead to confirm. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/find-the-projects.zip) |
-| **[interview-the-sponsor](./skills/frame-the-work/interview-the-sponsor/SKILL.md)** | Interview a sponsor or requester about a new project, one question at a time, until the problem, authority, scope and success criteria are clear enough to charter. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/interview-the-sponsor.zip) |
-| **[prioritize-the-backlog](./skills/frame-the-work/prioritize-the-backlog/SKILL.md)** | Put a backlog or list of candidate work into a reasoned order while keeping pinned items and fixed commitments exactly where they are, and show what moved and why. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/prioritize-the-backlog.zip) |
+| **[draft-the-charter](./plugins/ondatrace-pmo-skills/skills/frame-the-work/draft-the-charter/SKILL.md)** | Turn kickoff notes, a sponsor interview or a request email into a project charter that labels every field as confirmed, inferred or unconfirmed and lists who can close each gap. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/draft-the-charter.zip) |
+| **[find-the-projects](./plugins/ondatrace-pmo-skills/skills/frame-the-work/find-the-projects/SKILL.md)** | Sort a messy batch of notes, emails, tickets or chat exports into the candidate projects and initiatives they describe, with aliases and the boundaries that need a PMO lead to confirm. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/find-the-projects.zip) |
+| **[interview-the-sponsor](./plugins/ondatrace-pmo-skills/skills/frame-the-work/interview-the-sponsor/SKILL.md)** | Interview a sponsor or requester about a new project, one question at a time, until the problem, authority, scope and success criteria are clear enough to charter. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/interview-the-sponsor.zip) |
+| **[prioritize-the-backlog](./plugins/ondatrace-pmo-skills/skills/frame-the-work/prioritize-the-backlog/SKILL.md)** | Put a backlog or list of candidate work into a reasoned order while keeping pinned items and fixed commitments exactly where they are, and show what moved and why. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/prioritize-the-backlog.zip) |
 
 ### Run the week
 
@@ -147,10 +147,10 @@ The weekly rhythm of one project: meetings, status, risks and messages.
 
 | Skill | What it does | Claude upload |
 | --- | --- | --- |
-| **[debrief-the-meeting](./skills/run-the-week/debrief-the-meeting/SKILL.md)** | Turn a meeting transcript or notes into a handoff that separates what was said, what was decided and what was accepted, with owners and dates left blank where nobody gave them. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/debrief-the-meeting.zip) |
-| **[draft-the-stakeholder-update](./skills/run-the-week/draft-the-stakeholder-update/SKILL.md)** | Draft an escalation, customer update or stakeholder message from agreed facts, keeping every material risk, off-track status or open high-severity issue visible rather than softened. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/draft-the-stakeholder-update.zip) |
-| **[triage-the-risks](./skills/run-the-week/triage-the-risks/SKILL.md)** | Read a task list, dependency export and current risk log and find the emerging exposures, each with its trigger, the work affected and a response worth considering (avoid, mitigate, transfer or accept). | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/triage-the-risks.zip) |
-| **[write-the-weekly-update](./skills/run-the-week/write-the-weekly-update/SKILL.md)** | Write this week's project status update from last week's report and current evidence, covering what was finished, which milestones moved, which blockers persist and how long, and what decisions are needed. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/write-the-weekly-update.zip) |
+| **[debrief-the-meeting](./plugins/ondatrace-pmo-skills/skills/run-the-week/debrief-the-meeting/SKILL.md)** | Turn a meeting transcript or notes into a handoff that separates what was said, what was decided and what was accepted, with owners and dates left blank where nobody gave them. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/debrief-the-meeting.zip) |
+| **[draft-the-stakeholder-update](./plugins/ondatrace-pmo-skills/skills/run-the-week/draft-the-stakeholder-update/SKILL.md)** | Draft an escalation, customer update or stakeholder message from agreed facts, keeping every material risk, off-track status or open high-severity issue visible rather than softened. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/draft-the-stakeholder-update.zip) |
+| **[triage-the-risks](./plugins/ondatrace-pmo-skills/skills/run-the-week/triage-the-risks/SKILL.md)** | Read a task list, dependency export and current risk log and find the emerging exposures, each with its trigger, the work affected and a response worth considering (avoid, mitigate, transfer or accept). | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/triage-the-risks.zip) |
+| **[write-the-weekly-update](./plugins/ondatrace-pmo-skills/skills/run-the-week/write-the-weekly-update/SKILL.md)** | Write this week's project status update from last week's report and current evidence, covering what was finished, which milestones moved, which blockers persist and how long, and what decisions are needed. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/write-the-weekly-update.zip) |
 
 ### Test the status
 
@@ -158,10 +158,10 @@ Before anything goes to a sponsor: check the claims, the dates, the impact of a 
 
 | Skill | What it does | Claude upload |
 | --- | --- | --- |
-| **[challenge-my-status](./skills/test-the-status/challenge-my-status/SKILL.md)** | Check a draft status report against the last approved report and the supporting evidence, and pick out the few claims a PM should challenge before sending, with both sources and replacement wording. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/challenge-my-status.zip) |
-| **[reconcile-the-dates](./skills/test-the-status/reconcile-the-dates/SKILL.md)** | Line up the dates in a schedule, a customer commitment and a delivery forecast, work out which refer to the same milestone, show the gap, and say what still needs approval. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/reconcile-the-dates.zip) |
-| **[review-a-change-request](./skills/test-the-status/review-a-change-request/SKILL.md)** | Review a proposed scope, backlog or schedule change against the baseline, identify which committed deliverables and milestones it touches, and route the decision to the right approver. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/review-a-change-request.zip) |
-| **[trace-the-impact](./skills/test-the-status/trace-the-impact/SKILL.md)** | Trace an upstream slip or change through its dependencies to find which downstream work is exposed, which can still proceed, and how much buffer is left. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/trace-the-impact.zip) |
+| **[challenge-my-status](./plugins/ondatrace-pmo-skills/skills/test-the-status/challenge-my-status/SKILL.md)** | Check a draft status report against the last approved report and the supporting evidence, and pick out the few claims a PM should challenge before sending, with both sources and replacement wording. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/challenge-my-status.zip) |
+| **[reconcile-the-dates](./plugins/ondatrace-pmo-skills/skills/test-the-status/reconcile-the-dates/SKILL.md)** | Line up the dates in a schedule, a customer commitment and a delivery forecast, work out which refer to the same milestone, show the gap, and say what still needs approval. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/reconcile-the-dates.zip) |
+| **[review-a-change-request](./plugins/ondatrace-pmo-skills/skills/test-the-status/review-a-change-request/SKILL.md)** | Review a proposed scope, backlog or schedule change against the baseline, identify which committed deliverables and milestones it touches, and route the decision to the right approver. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/review-a-change-request.zip) |
+| **[trace-the-impact](./plugins/ondatrace-pmo-skills/skills/test-the-status/trace-the-impact/SKILL.md)** | Trace an upstream slip or change through its dependencies to find which downstream work is exposed, which can still proceed, and how much buffer is left. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/trace-the-impact.zip) |
 
 ### Run the portfolio
 
@@ -169,11 +169,11 @@ Across projects: steering, capacity, shared risks and where to spend today.
 
 | Skill | What it does | Claude upload |
 | --- | --- | --- |
-| **[build-the-portfolio-report](./skills/run-the-portfolio/build-the-portfolio-report/SKILL.md)** | Combine several project status reports into one portfolio report for leadership, with a like-for-like view of every project, the decisions leadership needs to make, the risks and dependencies that cross projects, and the reports that are stale or don't hold up. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/build-the-portfolio-report.zip) |
-| **[choose-todays-focus](./skills/run-the-portfolio/choose-todays-focus/SKILL.md)** | From current project briefs and pending decisions, pick the single most useful next action per project and order them for a leader's attention today. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/choose-todays-focus.zip) |
-| **[find-capacity-conflicts](./skills/run-the-portfolio/find-capacity-conflicts/SKILL.md)** | Add up each person's allocated hours across projects and find who is over capacity, in which weeks and by how much, with a trade-off for the director to decide. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/find-capacity-conflicts.zip) |
-| **[group-portfolio-risks](./skills/run-the-portfolio/group-portfolio-risks/SKILL.md)** | Read risk registers from several projects and group similar exposures, with supporting examples, separating a genuinely shared cause from risks that only sound alike. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/group-portfolio-risks.zip) |
-| **[prep-the-portfolio-review](./skills/run-the-portfolio/prep-the-portfolio-review/SKILL.md)** | Turn project briefs and the actions from the last review into a decision-first steering agenda, with the evidence behind each ask, the items the PM can handle without the committee, and a decision log to fill in at the close. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/prep-the-portfolio-review.zip) |
+| **[build-the-portfolio-report](./plugins/ondatrace-pmo-skills/skills/run-the-portfolio/build-the-portfolio-report/SKILL.md)** | Combine several project status reports into one portfolio report for leadership, with a like-for-like view of every project, the decisions leadership needs to make, the risks and dependencies that cross projects, and the reports that are stale or don't hold up. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/build-the-portfolio-report.zip) |
+| **[choose-todays-focus](./plugins/ondatrace-pmo-skills/skills/run-the-portfolio/choose-todays-focus/SKILL.md)** | From current project briefs and pending decisions, pick the single most useful next action per project and order them for a leader's attention today. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/choose-todays-focus.zip) |
+| **[find-capacity-conflicts](./plugins/ondatrace-pmo-skills/skills/run-the-portfolio/find-capacity-conflicts/SKILL.md)** | Add up each person's allocated hours across projects and find who is over capacity, in which weeks and by how much, with a trade-off for the director to decide. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/find-capacity-conflicts.zip) |
+| **[group-portfolio-risks](./plugins/ondatrace-pmo-skills/skills/run-the-portfolio/group-portfolio-risks/SKILL.md)** | Read risk registers from several projects and group similar exposures, with supporting examples, separating a genuinely shared cause from risks that only sound alike. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/group-portfolio-risks.zip) |
+| **[prep-the-portfolio-review](./plugins/ondatrace-pmo-skills/skills/run-the-portfolio/prep-the-portfolio-review/SKILL.md)** | Turn project briefs and the actions from the last review into a decision-first steering agenda, with the evidence behind each ask, the items the PM can handle without the committee, and a decision log to fill in at the close. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/prep-the-portfolio-review.zip) |
 
 ### Follow the decision
 
@@ -181,10 +181,10 @@ After the decision: did it work, did it land, who owns what, and are people read
 
 | Skill | What it does | Claude upload |
 | --- | --- | --- |
-| **[check-the-decision](./skills/follow-the-decision/check-the-decision/SKILL.md)** | Take a past decision, its expected result and fresh evidence, and say whether the intervention worked, what is still unknown and when to check again. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/check-the-decision.zip) |
-| **[plan-change-adoption](./skills/follow-the-decision/plan-change-adoption/SKILL.md)** | For a delivery change (a new system, process, date or scope change) and the groups it affects, propose the communications, training and adoption checks needed, labelled as recommendations. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/plan-change-adoption.zip) |
-| **[plan-the-handoff](./skills/follow-the-decision/plan-the-handoff/SKILL.md)** | Turn open reviews, follow-ups, owners and dates into a handoff that separates work that is assigned, work that is acknowledged by its owner and work that is actually done. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/plan-the-handoff.zip) |
-| **[trace-a-decision](./skills/follow-the-decision/trace-a-decision/SKILL.md)** | Take an approved change and the team artifacts that should reflect it (plans, tickets, schedules, customer commitments, messages) and show where the decision appears, where the evidence still shows the old position, and who should verify adoption. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/trace-a-decision.zip) |
+| **[check-the-decision](./plugins/ondatrace-pmo-skills/skills/follow-the-decision/check-the-decision/SKILL.md)** | Take a past decision, its expected result and fresh evidence, and say whether the intervention worked, what is still unknown and when to check again. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/check-the-decision.zip) |
+| **[plan-change-adoption](./plugins/ondatrace-pmo-skills/skills/follow-the-decision/plan-change-adoption/SKILL.md)** | For a delivery change (a new system, process, date or scope change) and the groups it affects, propose the communications, training and adoption checks needed, labelled as recommendations. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/plan-change-adoption.zip) |
+| **[plan-the-handoff](./plugins/ondatrace-pmo-skills/skills/follow-the-decision/plan-the-handoff/SKILL.md)** | Turn open reviews, follow-ups, owners and dates into a handoff that separates work that is assigned, work that is acknowledged by its owner and work that is actually done. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/plan-the-handoff.zip) |
+| **[trace-a-decision](./plugins/ondatrace-pmo-skills/skills/follow-the-decision/trace-a-decision/SKILL.md)** | Take an approved change and the team artifacts that should reflect it (plans, tickets, schedules, customer commitments, messages) and show where the decision appears, where the evidence still shows the old position, and who should verify adoption. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/trace-a-decision.zip) |
 
 ### Measure and learn
 
@@ -192,10 +192,10 @@ Money, metrics and lessons.
 
 | Skill | What it does | Claude upload |
 | --- | --- | --- |
-| **[check-the-success-metrics](./skills/measure-and-learn/check-the-success-metrics/SKILL.md)** | Compare success metric definitions, targets and direction with the latest observations, showing movement against each target, missing measures and questions to ask. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/check-the-success-metrics.zip) |
-| **[find-recurring-lessons](./skills/measure-and-learn/find-recurring-lessons/SKILL.md)** | Compare decisions and their outcomes across comparable projects to find candidate lessons, the counterexamples, and the limits on applying them elsewhere. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/find-recurring-lessons.zip) |
-| **[review-the-budget](./skills/measure-and-learn/review-the-budget/SKILL.md)** | From a budget, logged hours, rate assumptions and expenses, calculate actual spend, variance against budget and any unexplained gaps, with every figure traceable. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/review-the-budget.zip) |
-| **[run-the-retrospective](./skills/measure-and-learn/run-the-retrospective/SKILL.md)** | From a project's charter, decision history, delivery evidence and closeout notes, write a retrospective covering what happened, which interventions helped and what to repeat, with lessons specific enough for the next PM to use. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/run-the-retrospective.zip) |
+| **[check-the-success-metrics](./plugins/ondatrace-pmo-skills/skills/measure-and-learn/check-the-success-metrics/SKILL.md)** | Compare success metric definitions, targets and direction with the latest observations, showing movement against each target, missing measures and questions to ask. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/check-the-success-metrics.zip) |
+| **[find-recurring-lessons](./plugins/ondatrace-pmo-skills/skills/measure-and-learn/find-recurring-lessons/SKILL.md)** | Compare decisions and their outcomes across comparable projects to find candidate lessons, the counterexamples, and the limits on applying them elsewhere. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/find-recurring-lessons.zip) |
+| **[review-the-budget](./plugins/ondatrace-pmo-skills/skills/measure-and-learn/review-the-budget/SKILL.md)** | From a budget, logged hours, rate assumptions and expenses, calculate actual spend, variance against budget and any unexplained gaps, with every figure traceable. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/review-the-budget.zip) |
+| **[run-the-retrospective](./plugins/ondatrace-pmo-skills/skills/measure-and-learn/run-the-retrospective/SKILL.md)** | From a project's charter, decision history, delivery evidence and closeout notes, write a retrospective covering what happened, which interventions helped and what to repeat, with lessons specific enough for the next PM to use. | [Download](https://github.com/jsconu/pmo-skills/releases/latest/download/run-the-retrospective.zip) |
 
 <!-- skills:end -->
 

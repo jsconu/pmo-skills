@@ -12,6 +12,7 @@ import pathlib
 import zipfile
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
+PLUGIN = "plugins/ondatrace-pmo-skills"  # the folder submitted to the Claude directory
 SKIP = {"ask-justin"}
 
 
@@ -22,7 +23,7 @@ def main() -> None:
     dist = ROOT / "dist"
     dist.mkdir(exist_ok=True)
     built = []
-    for skill_md in sorted(ROOT.glob("skills/*/*/SKILL.md")):
+    for skill_md in sorted((ROOT / PLUGIN).glob("skills/*/*/SKILL.md")):
         folder = skill_md.parent
         if folder.parent.name == "deprecated" or folder.name in SKIP:
             continue
@@ -67,9 +68,9 @@ def write_combined(dist: pathlib.Path) -> None:
     """dist/pmo-skills-all.md: every skill (and its templates) as one text file for other assistants."""
     import json
     import re
-    version = json.loads((ROOT / ".claude-plugin" / "plugin.json").read_text(encoding="utf-8"))["version"]
+    version = json.loads((ROOT / PLUGIN / ".claude-plugin" / "plugin.json").read_text(encoding="utf-8"))["version"]
     index, sections = [], []
-    for skill_md in sorted(ROOT.glob("skills/*/*/SKILL.md"), key=lambda p: (p.parent.parent.name, p.parent.name)):
+    for skill_md in sorted((ROOT / PLUGIN).glob("skills/*/*/SKILL.md"), key=lambda p: (p.parent.parent.name, p.parent.name)):
         folder = skill_md.parent
         if folder.parent.name == "deprecated" or folder.name in SKIP:
             continue

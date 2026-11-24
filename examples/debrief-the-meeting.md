@@ -1,6 +1,6 @@
 # Who actually owns that?
 
-A five-minute exercise for [`debrief-the-meeting`](../skills/run-the-week/debrief-the-meeting/SKILL.md). No install needed. Everything here is fictional.
+A five-minute exercise for [`debrief-the-meeting`](../plugins/ondatrace-pmo-skills/skills/run-the-week/debrief-the-meeting/SKILL.md). No install needed. Everything here is fictional.
 
 ## Copy everything in this box into a new chat
 

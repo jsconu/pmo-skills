@@ -9,6 +9,7 @@ import zipfile
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DIST = ROOT / "dist"
+PLUGIN = "plugins/ondatrace-pmo-skills"
 ERRORS: list[str] = []
 
 
@@ -18,12 +19,12 @@ def check(condition: bool, message: str) -> None:
 
 
 def main() -> int:
-    manifest = json.loads((ROOT / ".claude-plugin/plugin.json").read_text(encoding="utf-8"))
+    manifest = json.loads((ROOT / PLUGIN / ".claude-plugin/plugin.json").read_text(encoding="utf-8"))
     declared = manifest["skills"]
     check(bool(re.fullmatch(r"\d+\.\d+\.\d+", manifest["version"])), "Invalid semantic version")
     check(len(declared) == len(set(declared)), "Duplicate skill in plugin manifest")
-    actual = sorted(ROOT.glob("skills/*/*/SKILL.md"))
-    expected = {str(p.parent.relative_to(ROOT)).replace("\\", "/") for p in actual}
+    actual = sorted((ROOT / PLUGIN).glob("skills/*/*/SKILL.md"))
+    expected = {str(p.parent.relative_to(ROOT / PLUGIN)).replace("\\", "/") for p in actual}
     declared_set = {p.removeprefix("./") for p in declared}
     check(declared_set == expected, f"Manifest mismatch: missing={sorted(expected-declared_set)}, extra={sorted(declared_set-expected)}")
 

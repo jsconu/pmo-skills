@@ -1,12 +1,12 @@
 {
-  "name": "pmo-skills",
-  "version": "0.4.0",
+  "name": "ondatrace-pmo-skills",
+  "version": "0.5.0",
   "description": "Justin Scoville's PMO skills for project managers, sponsors and PMO leaders: meeting debriefs, status checks and impact tracing that keep forecasts, decisions and buffers straight.",
   "author": {
     "name": "Justin Scoville",
     "url": "https://ondatrace.com"
   },
-  "homepage": "https://ondatrace.com",
+  "homepage": "https://ondatrace.com/ai-skills/",
   "repository": "https://github.com/jsconu/pmo-skills",
   "license": "MIT",
   "keywords": [
@@ -44,5 +44,6 @@
     "./skills/measure-and-learn/find-recurring-lessons",
     "./skills/measure-and-learn/review-the-budget",
     "./skills/measure-and-learn/run-the-retrospective"
-  ]
+  ],
+  "displayName": "Ondatrace PMO Skills"
 }
