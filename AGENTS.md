@@ -1,4 +1,4 @@
-Skills are organized into folders under `skills/`, named for the moment a PM needs help:
+Skills are organized into folders under `plugins/ondatrace-pmo-skills/skills/` (the plugin folder submitted to the Claude directory), named for the moment a PM needs help:
 
 - `frame-the-work/`: starting something new (sponsor, charter, project list, backlog)
 - `run-the-week/`: one project's weekly rhythm (meetings, status, risks, messages)
@@ -8,7 +8,7 @@ Skills are organized into folders under `skills/`, named for the moment a PM nee
 - `measure-and-learn/`: money, metrics and lessons
 - `start-here/`: the `ask-justin` router
 
-Every skill must have an entry in `.claude-plugin/plugin.json`'s `skills` array, a row in the top-level `README.md` and a row in its folder's `README.md`. Don't edit those by hand: run `python scripts/gen_docs.py .` after adding, renaming or re-describing a skill. It rebuilds the README tables, the folder READMEs, the plugin list and the map in `ask-justin`.
+Every skill must have an entry in `plugins/ondatrace-pmo-skills/.claude-plugin/plugin.json`'s `skills` array, a row in the top-level `README.md` and a row in its folder's `README.md`. Don't edit those by hand: run `python scripts/gen_docs.py .` after adding, renaming or re-describing a skill. It rebuilds the README tables, the folder READMEs, the plugin list and the map in `ask-justin`.
 
 Every `SKILL.md` is either user-invoked (`disable-model-invocation: true` plus `policy.allow_implicit_invocation: false` in `agents/openai.yaml`) or model-invoked (neither). Only `ask-justin` is user-invoked. Every skill folder has an `agents/openai.yaml` with a display name and short description.
 
@@ -22,4 +22,4 @@ No em-dashes anywhere in this repo's prose. Rewrite the sentence with a comma, c
 
 Write in plain PM language. No jargon a sponsor wouldn't use, no AI-sounding phrasing.
 
-Releases: build with `python scripts/build_zips.py`, which writes `dist/<skill>.zip` for every skill plus `dist/pmo-skills-all.zip` and `dist/pmo-skills-all.md` (every skill in one text file for non-Claude assistants), then attach them to a GitHub release. The README download links point at `releases/latest/download/<skill>.zip`, so asset names must stay the same. Run `claude plugin validate . --strict` after touching either manifest, and bump `version` in `plugin.json` with each release.
+Releases: build with `python scripts/build_zips.py`, which writes `dist/<skill>.zip` for every skill plus `dist/pmo-skills-all.zip` and `dist/pmo-skills-all.md` (every skill in one text file for non-Claude assistants), then attach them to a GitHub release. The README download links point at `releases/latest/download/<skill>.zip`, so asset names must stay the same. Run `claude plugin validate . --strict` and `claude plugin validate ./plugins/ondatrace-pmo-skills --strict` after touching either manifest, and bump `version` in the plugin folder's `plugin.json` with each release.

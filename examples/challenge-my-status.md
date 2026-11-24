@@ -1,6 +1,6 @@
 # Did anyone approve the new date?
 
-A five-minute exercise for [`challenge-my-status`](../skills/test-the-status/challenge-my-status/SKILL.md). No install needed. Everything here is fictional.
+A five-minute exercise for [`challenge-my-status`](../plugins/ondatrace-pmo-skills/skills/test-the-status/challenge-my-status/SKILL.md). No install needed. Everything here is fictional.
 
 ## Copy everything in this box into a new chat
 

@@ -24,7 +24,7 @@ BLOCKED_TOOLS = ("Bash", "PowerShell", "Read", "Edit", "Write", "Glob", "Grep", 
 
 def find_skill(name: str) -> pathlib.Path:
     for bucket in BUCKETS:
-        path = ROOT / "skills" / bucket / name / "SKILL.md"
+        path = ROOT / "plugins" / "ondatrace-pmo-skills" / "skills" / bucket / name / "SKILL.md"
         if path.exists():
             return path
     sys.exit(f"No SKILL.md for {name} in {', '.join(BUCKETS)}")

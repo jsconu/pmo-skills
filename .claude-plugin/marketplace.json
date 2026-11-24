@@ -7,11 +7,17 @@
   "description": "Justin Scoville's PMO skills, as an installable Claude Code plugin.",
   "plugins": [
     {
-      "name": "pmo-skills",
-      "source": "./",
+      "name": "ondatrace-pmo-skills",
+      "source": "./plugins/ondatrace-pmo-skills",
       "description": "PMO skills for project managers and PMO leaders: meeting debriefs, status checks and impact tracing.",
       "category": "productivity",
-      "keywords": ["project-management", "pmo", "status-report", "meetings", "risk"]
+      "keywords": [
+        "project-management",
+        "pmo",
+        "status-report",
+        "meetings",
+        "risk"
+      ]
     }
   ]
 }
