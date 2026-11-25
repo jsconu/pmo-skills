@@ -26,7 +26,7 @@ Email from Kestrel Integrations, Friday 5 February:
 
 Test plan v3, section 4:
 "Smoke tests start Tuesday 9 February using the order-routing stub. They do not need the live interface."
-"The full regression suite needs the live order-routing interface in the test environment by Monday 1 March. Installing it takes half a day. Regression runs 1 to 5 March, ahead of go/no-go on Monday 8 March."
+"The full regression suite needs the live order-routing interface in the test environment by Monday 1 March. Kestrel’s forecast is for the interface to be installed and ready for use on 19 February. Regression runs 1 to 5 March, ahead of go/no-go on Monday 8 March."
 
 Label printing work plan:
 "Integration test with the live order-routing interface on Tuesday 16 February. The label vendor's engineer is on site that day only."
