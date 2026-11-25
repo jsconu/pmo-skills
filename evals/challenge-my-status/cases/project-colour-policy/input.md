@@ -1,0 +1,1 @@
+The approved Harbor baseline has integration finishing on 10 May and an unchanged customer launch on 20 May. Engineering now forecasts integration on 13 May. The customer launch still holds. Harbor policy allows overall green with up to five calendar days of internal milestone variance when the customer date holds. The draft says: Overall green. All milestones on plan.

@@ -1,0 +1,1 @@
+The Harbor pilot and billing rehearsals both need their respective feeds ready by 14:00 on 2 December. The release team forecasts the pilot feed ready at 14:00. The billing feed is forecast to arrive at 13:30 and needs one hour of setup. All times are local on the same date.
