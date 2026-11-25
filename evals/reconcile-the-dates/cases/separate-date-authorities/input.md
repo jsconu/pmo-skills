@@ -1,0 +1,1 @@
+The steering-approved Harbor plan sets delivery on 10 May. Only steering can rebaseline this plan. The signed customer agreement promises delivery by 15 May and requires both parties to approve a change. Engineering forecasts delivery on 13 May and says delivery cannot happen before 12 May. No approval was recorded.

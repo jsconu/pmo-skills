@@ -1,0 +1,1 @@
+Keep overall green under the supplied policy. Replace the claim that all milestones are on plan with the three-day internal variance. Preserve the 10 May baseline, the 13 May forecast and the 20 May customer date.

@@ -1,10 +1,10 @@
 # Testing a skill (optional)
 
-A harness for comparing a skill blind against a plain assistant on fictional cases. Cases exist so far for trace-the-impact, challenge-my-status and debrief-the-meeting. Use it when you change one of those skills, or add cases for another.
+A harness for comparing a skill blind against a plain assistant on fictional cases. Cases exist so far for trace-the-impact, challenge-my-status, debrief-the-meeting and reconcile-the-dates. Use it when you change one of those skills, or add cases for another.
 
 ## The cases
 
-Each skill has four fictional cases in `evals/<skill>/cases/`:
+The original four-case suites cover these situations. Additional regression cases also live in `evals/<skill>/cases/`:
 
 | Case | What it tests |
 | --- | --- |

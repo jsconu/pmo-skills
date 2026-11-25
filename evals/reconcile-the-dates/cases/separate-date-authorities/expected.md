@@ -1,0 +1,1 @@
+Keep the 10 May internal baseline, 15 May external commitment, 13 May forecast and 12 May lower bound separate. Forecast is three days later than the baseline and two days ahead of the customer commitment. Steering controls the internal baseline. Both parties control the external commitment. Neither was changed.
