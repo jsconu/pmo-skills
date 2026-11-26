@@ -6,6 +6,8 @@ Unzip the free bundle to find the individual skill ZIPs for Claude. For ChatGPT 
 
 By **Justin Scoville, PMP, PgMP**. Published by [Ondatrace](https://ondatrace.com).
 
+> **Get practical AI tips for project managers.** Skills, agents and workflows I actually use to run projects with AI, sent to your inbox. [Join the free email list](https://ondatrace.kit.com/pmo-skills)
+
 Agent skills for project managers, sponsors and PMO leaders: the checks I run on a meeting, a status report, a slipped date or a steering agenda before anything goes in front of a sponsor.
 
 AI assistants are quick to write a status report and quick to raise a risk. They are much worse at the part of the job that matters: telling a forecast from a commitment, a suggestion from a decision, and a slip that still has ten days of buffer from one that collides. These skills are small, plain-language methods that hold an assistant to that standard. Start by asking about a project in your assistant. The launch, date, impact and status checks can use authorized project records. A file or pasted excerpt also works.
