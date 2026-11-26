@@ -6,6 +6,12 @@ Unzip the free bundle to find the individual skill ZIPs for Claude. For ChatGPT 
 
 By **Justin Scoville, PMP, PgMP**. Published by [Ondatrace](https://ondatrace.com).
 
+**If a skill saves you time, please star this repo** (the Star button at the top right). It's the main way other PMs find these skills.
+
+**Get new skills first.** [Join the email list](https://ondatrace.kit.com/pmo-skills) for one short email a month: new skills before they're published here, and first seats at live workshops. It's optional. The skills stay free with no signup.
+
+**Live workshop: The AI-Native Project Manager, Saturday, January 9, 1:00 pm Mountain.** Learn to make AI catch what your status reports hide, using a sample project. No coding. [Join the email list](https://ondatrace.kit.com/pmo-skills) to get the signup link.
+
 Agent skills for project managers, sponsors and PMO leaders: the checks I run on a meeting, a status report, a slipped date or a steering agenda before anything goes in front of a sponsor.
 
 AI assistants are quick to write a status report and quick to raise a risk. They are much worse at the part of the job that matters: telling a forecast from a commitment, a suggestion from a decision, and a slip that still has ten days of buffer from one that collides. These skills are small, plain-language methods that hold an assistant to that standard. Start by asking about a project in your assistant. The launch, date, impact and status checks can use authorized project records. A file or pasted excerpt also works.
@@ -13,6 +19,16 @@ AI assistants are quick to write a status report and quick to raise a risk. They
 **Free, and nothing to sign up for.** You don't need an Ondatrace account or any other account beyond the AI assistant you already use. Connected checks use the tools already available in your assistant. Files and excerpts work without connectors.
 
 Use them, adapt them, pass them to a colleague. If you hit a case they get wrong, [tell me](#contributing).
+
+## New here? Try one in five minutes, no install
+
+Each exercise is a short fictional project you paste into any AI chat. You'll see the difference before you install anything.
+
+| Exercise | Skill | What it catches |
+| --- | --- | --- |
+| [Did anyone approve the new date?](./examples/challenge-my-status.md) | `challenge-my-status` | A status draft that quietly moved the date and stayed green |
+| [Would you escalate this slip?](./examples/trace-the-impact.md) | `trace-the-impact` | A slip that still has ten days of buffer, so it doesn't need escalating |
+| [Who actually owns that?](./examples/debrief-the-meeting.md) | `debrief-the-meeting` | Meeting notes that turned a suggestion into a decision and an ask into an owner |
 
 ## Start with the decision you need to make
 
@@ -88,6 +104,8 @@ npx skills@latest add jsconu/pmo-skills
 ## Step 2: Use them
 
 Once the skills are installed (or attached to your workspace), you don't need a special command. Start with a question such as "Can the Harbor launch still go ahead Thursday?" or "Check the Harbor status draft before I send it." Name the project or link a work item if it is not already in context. The connected checks will look for relevant records they can access. If a key source is unavailable, provide a link, file or excerpt.
+
+**Did it work?** [Star the repo](https://github.com/jsconu/pmo-skills) so other PMs can find it, and [join the email list](https://ondatrace.kit.com/pmo-skills) to get new skills first. If it got something wrong, [tell me](#contributing). That's even more useful.
 
 **Not sure which skill you need?** Look up [the moment you're in](#reference). If you installed in Claude Code, you can also type `/ask-justin` (or `/pmo-skills:ask-justin`) and describe your situation, and it will point you to the right skill. That command only exists after Step 1, and only in Claude Code; it isn't part of the Claude app downloads.
 
