@@ -10,7 +10,7 @@ By **Justin Scoville, PMP, PgMP**. Published by [Ondatrace](https://ondatrace.co
 
 **Get new skills first.** [Join the email list](https://ondatrace.kit.com/pmo-skills) for one short email a month: new skills before they're published here, and first seats at live workshops. It's optional. The skills stay free with no signup.
 
-**Live workshop: The AI-Native Project Manager, Saturday, January 9, 1:00 pm Mountain.** Learn to make AI catch what your status reports hide, using a sample project. No coding. [Join the email list](https://ondatrace.kit.com/pmo-skills) to get the signup link.
+**Live workshop: Green Until It's Red, Saturday, January 9, 1:00 pm Mountain.** Make AI catch what your status reports hide, using a sample project. No coding. [Join the email list](https://ondatrace.kit.com/pmo-skills) to get the signup link.
 
 Agent skills for project managers, sponsors and PMO leaders: the checks I run on a meeting, a status report, a slipped date or a steering agenda before anything goes in front of a sponsor.
 
